@@ -6,34 +6,44 @@
  * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
 @font-face {
-  font-family: 'Patua One';
+  font-family: "Patua One";
   font-style: normal;
   font-weight: 400;
   src: local("Patua One"), local("PatuaOne-Regular"), url(fonts/ZXuke1cDvLCKLDcimxB44_luFgxbuQ.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 @font-face {
-  font-family: 'Cabin Condensed';
+  font-family: "Cabin Condensed";
   font-style: normal;
   font-weight: 400;
   src: local("Cabin Condensed"), local("CabinCondensed-Regular"), url(fonts/nwpMtK6mNhBK2err_hqkYhHRqmwqZ-LYxnV18A.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/*
+--bg-color: hsla(202, 85%, 4%, 1);
+--link-color: hsla(215, 100%, 59.6%, 0.9);
+--link-color-hover: hsla(215, 100%, 59.6%, 1);
+--link-color-visited: hsla(255, 100%, 69.4%, 0.96);
+--snow-bg-color: hsla(202, 85%, 8%, 1);
+--snow-bg-color-light: hsla(202, 85%, 12%, 1);
+--text-color: hsl(20, 60%, 98%);
+*/
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
-  color: #fff; }
+  color: #fff;
+}
 
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 :root {
-  --background-color: #f7ece6;
+  --background-color: hsl(202deg, 85%, 4%);
   --main-font: Cabin Condensed, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   --main-font-size: 40px;
-  --main-color: #052a3f;
+  --main-color: hsl(20deg, 60%, 98%);
   --block-margin: 20px;
   --heading-margin: 0 0 20px 0;
   --heading-font: Patua One, Andale Mono, serif;
-  --heading-color: #052a3f;
+  --heading-color: hsl(20deg, 60%, 98%);
   --heading-line-height: 1.2;
   --heading-letter-spacing: normal;
   --heading-text-transform: none;
@@ -45,35 +55,41 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --heading3-size: 1.55em;
   --heading4-size: 1em;
   --code-font: monospace;
-  --link-color: #2d62ad;
+  --link-color: hsl(215deg, 100%, 59.6%);
   --link-color-hover: #3472c9;
   --selection-background-color: #2d62ad;
-  --selection-color: #fff; }
+  --selection-color: #fff;
+}
 
 .reveal-viewport {
-  background: #f7ece6;
-  background-color: #f7ece6; }
+  background: hsl(202deg, 85%, 4%);
+  background-color: hsl(202deg, 85%, 4%);
+}
 
 .reveal {
   font-family: "Cabin Condensed", -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   font-size: 40px;
   font-weight: normal;
-  color: #052a3f; }
+  color: hsl(20deg, 60%, 98%);
+}
 
 .reveal ::selection {
   color: #fff;
   background: #2d62ad;
-  text-shadow: none; }
+  text-shadow: none;
+}
 
 .reveal ::-moz-selection {
   color: #fff;
   background: #2d62ad;
-  text-shadow: none; }
+  text-shadow: none;
+}
 
 .reveal .slides section,
 .reveal .slides section > section {
   line-height: 1.3;
-  font-weight: inherit; }
+  font-weight: inherit;
+}
 
 /*********************************************
  * HEADERS
@@ -85,36 +101,43 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #052a3f;
+  color: hsl(20deg, 60%, 98%);
   font-family: "Patua One", Andale Mono, serif;
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
   text-transform: none;
   text-shadow: none;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+}
 
 .reveal h1 {
-  font-size: 3.77em; }
+  font-size: 3.77em;
+}
 
 .reveal h2 {
-  font-size: 2.11em; }
+  font-size: 2.11em;
+}
 
 .reveal h3 {
-  font-size: 1.55em; }
+  font-size: 1.55em;
+}
 
 .reveal h4 {
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 .reveal h1 {
-  text-shadow: none; }
+  text-shadow: none;
+}
 
 /*********************************************
  * OTHER
  *********************************************/
 .reveal p {
   margin: 20px 0;
-  line-height: 1.3; }
+  line-height: 1.3;
+}
 
 /* Remove trailing margins after titles */
 .reveal h1:last-child,
@@ -123,53 +146,65 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 .reveal h4:last-child,
 .reveal h5:last-child,
 .reveal h6:last-child {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 /* Ensure certain elements are never larger than the slide itself */
 .reveal img,
 .reveal video,
 .reveal iframe {
   max-width: 95%;
-  max-height: 95%; }
+  max-height: 95%;
+}
 
 .reveal strong,
 .reveal b {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .reveal em {
-  font-style: italic; }
+  font-style: italic;
+}
 
 .reveal ol,
 .reveal dl,
 .reveal ul {
   display: inline-block;
   text-align: left;
-  margin: 0 0 0 1em; }
+  margin: 0 0 0 1em;
+}
 
 .reveal ol {
-  list-style-type: decimal; }
+  list-style-type: decimal;
+}
 
 .reveal ul {
-  list-style-type: disc; }
+  list-style-type: disc;
+}
 
 .reveal ul ul {
-  list-style-type: square; }
+  list-style-type: square;
+}
 
 .reveal ul ul ul {
-  list-style-type: circle; }
+  list-style-type: circle;
+}
 
 .reveal ul ul,
 .reveal ul ol,
 .reveal ol ol,
 .reveal ol ul {
   display: block;
-  margin-left: 40px; }
+  margin-left: 40px;
+}
 
 .reveal dt {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .reveal dd {
-  margin-left: 40px; }
+  margin-left: 40px;
+}
 
 .reveal blockquote {
   display: block;
@@ -179,14 +214,17 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   padding: 5px;
   font-style: italic;
   background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
 
 .reveal blockquote p:first-child,
 .reveal blockquote p:last-child {
-  display: inline-block; }
+  display: inline-block;
+}
 
 .reveal q {
-  font-style: italic; }
+  font-style: italic;
+}
 
 .reveal pre {
   display: block;
@@ -198,136 +236,164 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   font-family: monospace;
   line-height: 1.2em;
   word-wrap: break-word;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
 
 .reveal code {
   font-family: monospace;
-  text-transform: none; }
+  text-transform: none;
+}
 
 .reveal pre code {
   display: block;
   padding: 5px;
   overflow: auto;
   max-height: 400px;
-  word-wrap: normal; }
+  word-wrap: normal;
+}
 
 .reveal table {
   margin: auto;
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 .reveal table th {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .reveal table th,
 .reveal table td {
   text-align: left;
   padding: 0.2em 0.5em 0.2em 0.5em;
-  border-bottom: 1px solid; }
+  border-bottom: 1px solid;
+}
 
-.reveal table th[align="center"],
-.reveal table td[align="center"] {
-  text-align: center; }
+.reveal table th[align=center],
+.reveal table td[align=center] {
+  text-align: center;
+}
 
-.reveal table th[align="right"],
-.reveal table td[align="right"] {
-  text-align: right; }
+.reveal table th[align=right],
+.reveal table td[align=right] {
+  text-align: right;
+}
 
 .reveal table tbody tr:last-child th,
 .reveal table tbody tr:last-child td {
-  border-bottom: none; }
+  border-bottom: none;
+}
 
 .reveal sup {
   vertical-align: super;
-  font-size: smaller; }
+  font-size: smaller;
+}
 
 .reveal sub {
   vertical-align: sub;
-  font-size: smaller; }
+  font-size: smaller;
+}
 
 .reveal small {
   display: inline-block;
   font-size: 0.6em;
   line-height: 1.2em;
-  vertical-align: top; }
+  vertical-align: top;
+}
 
 .reveal small * {
-  vertical-align: top; }
+  vertical-align: top;
+}
 
 .reveal img {
-  margin: 20px 0; }
+  margin: 20px 0;
+}
 
 /*********************************************
  * LINKS
  *********************************************/
 .reveal a {
-  color: #2d62ad;
+  color: hsl(215deg, 100%, 59.6%);
   text-decoration: none;
-  transition: color .15s ease; }
+  transition: color 0.15s ease;
+}
 
 .reveal a:hover {
   color: #3472c9;
   text-shadow: none;
-  border: none; }
+  border: none;
+}
 
 .reveal .roll span:after {
   color: #fff;
-  background: #1d4070; }
+  background: #005fe3;
+}
 
 /*********************************************
  * Frame helper
  *********************************************/
 .reveal .r-frame {
-  border: 4px solid #052a3f;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+  border: 4px solid hsl(20deg, 60%, 98%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
 
 .reveal a .r-frame {
-  transition: all .15s linear; }
+  transition: all 0.15s linear;
+}
 
 .reveal a:hover .r-frame {
-  border-color: #2d62ad;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+  border-color: hsl(215deg, 100%, 59.6%);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+}
 
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: #2d62ad; }
+  color: hsl(215deg, 100%, 59.6%);
+}
 
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
-  color: #2d62ad; }
+  color: hsl(215deg, 100%, 59.6%);
+}
 
 /*********************************************
  * PRINT BACKGROUND
  *********************************************/
 @media print {
   .backgrounds {
-    background-color: #f7ece6; } }
-
+    background-color: hsl(202deg, 85%, 4%);
+  }
+}
 .reveal ol.steps {
   margin-top: 1em;
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
-  .reveal ol.steps li {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
+  justify-content: space-around;
+}
+.reveal ol.steps li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .step-icon {
-  font-size: 2em; }
+  font-size: 2em;
+}
 
 .step-name {
-  font-size: 0.5em; }
+  font-size: 0.5em;
+}
 
 mark {
   position: relative;
-  background-color: transparent; }
+  background-color: transparent;
+}
 
 mark:before {
   content: "";
@@ -339,77 +405,109 @@ mark:before {
   filter: url(#marker-shape);
   left: -0.15em;
   top: 0.1em;
-  padding: 0 0.15em; }
+  padding: 0 0.15em;
+}
 
 #ikigai {
-  width: 50vh; }
-  #ikigai path {
-    stroke: #2a2734;
-    stroke-width: .5; }
-  #ikigai path.love {
-    fill: #ffff99; }
-  #ikigai path.love:hover {
-    fill: #ffff80; }
-  #ikigai path.needs {
-    fill: #ff9999; }
-  #ikigai path.needs:hover {
-    fill: #ff8080; }
-  #ikigai path.money {
-    fill: #9999ff; }
-  #ikigai path.money:hover {
-    fill: #8080ff; }
-  #ikigai path.skills {
-    fill: #99ff99; }
-  #ikigai path.skills:hover {
-    fill: #80ff80; }
-  #ikigai path.mission {
-    fill: #ffcc99; }
-  #ikigai path.mission:hover {
-    fill: #ffbf80; }
-  #ikigai path.vocation {
-    fill: #cc99cc; }
-  #ikigai path.vocation:hover {
-    fill: #c488c4; }
-  #ikigai path.profession {
-    fill: #99cccc; }
-  #ikigai path.profession:hover {
-    fill: #88c4c4; }
-  #ikigai path.passion {
-    fill: #ccff99; }
-  #ikigai path.passion:hover {
-    fill: #bfff80; }
-  #ikigai path.delight {
-    fill: #e6e699; }
-  #ikigai path.delight:hover {
-    fill: #e1e185; }
-  #ikigai path.excitement {
-    fill: #e6b3b3; }
-  #ikigai path.excitement:hover {
-    fill: #e0a0a0; }
-  #ikigai path.comfort {
-    fill: #b3b3cc; }
-  #ikigai path.comfort:hover {
-    fill: #a4a4c2; }
-  #ikigai path.satisfaction {
-    fill: #b3e6b3; }
-  #ikigai path.satisfaction:hover {
-    fill: #a0e0a0; }
-  #ikigai path.ikigai {
-    fill: #fff; }
-  #ikigai path.ikigai:hover {
-    fill: #f2f2f2; }
-  #ikigai text {
-    text-anchor: middle;
-    alignment-baseline: middle;
-    font-size: 5px;
-    font-weight: 500;
-    text-transform: uppercase; }
-  #ikigai text.small {
-    font-size: 4px;
-    font-weight: 400;
-    text-transform: none; }
-  #ikigai .lvl-3 text {
-    font-size: 2.5px;
-    font-weight: 200;
-    font-style: italic;
-    text-transform: none; }
+  width: 50vh;
+}
+#ikigai path {
+  stroke: #2a2734;
+  stroke-width: 0.5;
+}
+#ikigai path.love {
+  fill: #ffff99;
+}
+#ikigai path.love:hover {
+  fill: #ffff80;
+}
+#ikigai path.needs {
+  fill: #ff9999;
+}
+#ikigai path.needs:hover {
+  fill: #ff8080;
+}
+#ikigai path.money {
+  fill: #9999ff;
+}
+#ikigai path.money:hover {
+  fill: #8080ff;
+}
+#ikigai path.skills {
+  fill: #99ff99;
+}
+#ikigai path.skills:hover {
+  fill: #80ff80;
+}
+#ikigai path.mission {
+  fill: #ffcc99;
+}
+#ikigai path.mission:hover {
+  fill: #ffbf80;
+}
+#ikigai path.vocation {
+  fill: #cc99cc;
+}
+#ikigai path.vocation:hover {
+  fill: #c488c4;
+}
+#ikigai path.profession {
+  fill: #99cccc;
+}
+#ikigai path.profession:hover {
+  fill: #88c4c4;
+}
+#ikigai path.passion {
+  fill: #ccff99;
+}
+#ikigai path.passion:hover {
+  fill: #bfff80;
+}
+#ikigai path.delight {
+  fill: #e6e699;
+}
+#ikigai path.delight:hover {
+  fill: #e1e185;
+}
+#ikigai path.excitement {
+  fill: #e6b3b3;
+}
+#ikigai path.excitement:hover {
+  fill: #e0a0a0;
+}
+#ikigai path.comfort {
+  fill: #b3b3cc;
+}
+#ikigai path.comfort:hover {
+  fill: #a4a4c2;
+}
+#ikigai path.satisfaction {
+  fill: #b3e6b3;
+}
+#ikigai path.satisfaction:hover {
+  fill: #a0e0a0;
+}
+#ikigai path.ikigai {
+  fill: #fff;
+}
+#ikigai path.ikigai:hover {
+  fill: #f2f2f2;
+}
+#ikigai text {
+  text-anchor: middle;
+  alignment-baseline: middle;
+  font-size: 5px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#ikigai text.small {
+  font-size: 4px;
+  font-weight: 400;
+  text-transform: none;
+}
+#ikigai .lvl-3 text {
+  font-size: 2.5px;
+  font-weight: 200;
+  font-style: italic;
+  text-transform: none;
+}

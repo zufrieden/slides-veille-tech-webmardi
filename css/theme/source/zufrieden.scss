@@ -32,15 +32,25 @@
 
 // Override theme settings (see ../template/settings.scss)
 $mainFont: 'Cabin Condensed',-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
-$mainColor: #052a3f;
+$mainColor:hsl(20, 60%, 98%);;
 $headingFont: 'Patua One', Andale Mono, serif;
-$headingColor: #052a3f;
+$headingColor:hsl(20, 60%, 98%);;
 $headingTextShadow: none;
 $headingTextTransform: none;
-$backgroundColor: #f7ece6;
-$linkColor: #2d62ad;
+$backgroundColor:hsla(202, 85%, 4%, 1);
+$linkColor:hsla(215, 100%, 59.6%, 1);
 $linkColorHover: #3472c9;
 $selectionBackgroundColor: #2d62ad;
+
+/*
+--bg-color: hsla(202, 85%, 4%, 1);
+--link-color: hsla(215, 100%, 59.6%, 0.9);
+--link-color-hover: hsla(215, 100%, 59.6%, 1);
+--link-color-visited: hsla(255, 100%, 69.4%, 0.96);
+--snow-bg-color: hsla(202, 85%, 8%, 1);
+--snow-bg-color-light: hsla(202, 85%, 12%, 1);
+--text-color: hsl(20, 60%, 98%);
+*/
 
 // Change text colors against dark slide backgrounds
 @include dark-bg-text-color(#fff);
