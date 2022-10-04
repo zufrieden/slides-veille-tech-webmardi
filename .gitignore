@@ -2,3 +2,4 @@ node_modules
 .DS_Store
 .nova
 **/*.icloud
+.dontcomit_info_talk
